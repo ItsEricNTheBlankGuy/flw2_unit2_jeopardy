@@ -42,7 +42,7 @@ function renderQuestions() {
     var columnID = "#" + id;
     for (let questionValue of questionValues) {
       $(columnID).append(
-        `<div class='question'><div class='question-cell'>${questionValue}</div></div>`
+        `<div class='question'><div class='question-cell' data-category='${i}'>${questionValue}</div></div>`
       );
     }
     id += "i";
